@@ -45,8 +45,13 @@
   <ItemGroup>
     <Compile Include="Drawing\Drawing.cs" />
     <Compile Include="Drawing\Geometry.cs" />
+    <Compile Include="GameComponents\MoveableEntity.cs" />
     <Compile Include="GameComponents\ScreenWithInputState.cs" />
     <Compile Include="Input\KeyboardRecorder.cs" />
+    <Compile Include="Particles\Emitter.cs" />
+    <Compile Include="Particles\IEmitter.cs" />
+    <Compile Include="Particles\Particle.cs" />
+    <Compile Include="Particles\RandomizedEmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

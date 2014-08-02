@@ -50,7 +50,7 @@ namespace XNAUtils.Drawing
                                                              float missingChunkDegrees, GraphicsDevice graphicsDevice)
         {
             Debug.Assert(Radius >= 0, "Radius should never be negative.");
-            Debug.Assert(missingChunkDegrees >= 0, "Can't be missing negative degrees of chunk."0;)
+            Debug.Assert(missingChunkDegrees >= 0, "Can't be missing negative degrees of chunk.");
 
             // TODO I should probably modify these to just return the array
             //      of texels. Otherwise, memory leaks are very likely.

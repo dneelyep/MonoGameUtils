@@ -14,7 +14,7 @@ namespace MonoGameUtils.GameComponents
     /// is updated on each Update() based on Acceleration.
     /// </summary> 
     public class MoveableEntity
-        : GameComponent
+        : GameComponent 
     {
         /// <summary>
         /// This MoveableEntity's position on the screen.

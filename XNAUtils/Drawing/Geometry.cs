@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Drawing
+namespace MonoGameUtils.Drawing
 {
     internal class Geometry
     {

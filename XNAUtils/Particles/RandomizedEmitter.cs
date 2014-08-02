@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Particles
+namespace MonoGameUtils.Particles
 {
     /// <summary>
     /// A <c>Particle</c> <c>Emitter</c> that randomly chooses a next

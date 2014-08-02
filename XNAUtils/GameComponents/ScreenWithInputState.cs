@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.GameComponents
+namespace MonoGameUtils.GameComponents
 {
     /// <summary>
     /// A screen that tracks the Keyboard and Mouse state between

@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.GameComponents
+namespace MonoGameUtils.GameComponents
 {
     /// <summary>
     /// Represents an entity with Position, Velocity, and Acceleration.
     /// Position is updated on each Update() based on Velocity, and Velocity
     /// is updated on each Update() based on Acceleration.
-    /// </summary>
+    /// </summary> 
     public class MoveableEntity
         : GameComponent
     {

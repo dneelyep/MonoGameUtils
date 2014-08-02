@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Particles
+namespace MonoGameUtils.Particles
 {
     /// <summary>
     /// Class that represents a point from which Particles can be emitted.

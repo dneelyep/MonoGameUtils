@@ -7,8 +7,8 @@
     <ProjectGuid>{1BB9F333-E0A7-4007-8E77-5211D076AF8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XNAUtils</RootNamespace>
-    <AssemblyName>XNAUtils</AssemblyName>
+    <RootNamespace>MonoGameUtils</RootNamespace>
+    <AssemblyName>MonoGameUtils</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

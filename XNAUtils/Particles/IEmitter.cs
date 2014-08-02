@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Particles
+namespace MonoGameUtils.Particles
 {
     /// <summary>
     /// Describes the actions that must be implemented by every Emitter.

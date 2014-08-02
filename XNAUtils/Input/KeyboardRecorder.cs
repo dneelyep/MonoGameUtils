@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Input
+namespace MonoGameUtils.Input
 {
 
     /* TODO So what I want is:
@@ -49,7 +49,7 @@ namespace XNAUtils.Input
                     if (!this.previouslyPressedKeys.Contains(key))
                     {
                         // TODO Would be interesting to bundle this functionality into a Keys.ToHumanFriendlyString()
-                        //      extension method in XNAUtils.
+                        //      extension method in MonoGameUtils.
                         switch (key)
                         {
                             case Keys.D0: this.RecordedText += "0"; break;

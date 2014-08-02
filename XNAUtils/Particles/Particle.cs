@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XNAUtils.Particles
+namespace MonoGameUtils.Particles
 {
     /// <summary>
     /// Represents a single, visible particle.

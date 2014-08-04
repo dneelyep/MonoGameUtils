@@ -58,6 +58,21 @@ namespace MonoGameUtils.Particles
         /// </summary>
         public Texture2D Texture;
 
+        // TODO This should take into account Orientation.
+        /// <summary>
+        /// The physical space on the screen that this Particle takes up.
+        /// </summary>
+        public Rectangle Bounds
+        {
+            get
+            {
+                return new Rectangle((int)this.Location.X,
+                                     (int)this.Location.Y,
+                                     this.Texture.Width,
+                                     this.Texture.Height);
+            }
+        }
+
         public Particle(Game game,
                         SpriteBatch spriteBatch,
                         Vector2 location,

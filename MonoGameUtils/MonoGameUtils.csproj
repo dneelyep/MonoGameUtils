@@ -47,6 +47,7 @@
     <Compile Include="Drawing\CubicBezier.cs" />
     <Compile Include="Drawing\Drawing.cs" />
     <Compile Include="Drawing\Geometry.cs" />
+    <Compile Include="Extensions\GraphicsDevice.cs" />
     <Compile Include="GameComponents\Cursor.cs" />
     <Compile Include="GameComponents\MoveableEntity.cs" />
     <Compile Include="GameComponents\ScreenWithInputState.cs" />

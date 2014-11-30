@@ -27,7 +27,7 @@ namespace MonoGameUtils.GameComponents
         /// </summary>
         private SpriteBatch spriteBatch { get; set; }
 
-        private Rectangle Bounds
+        public Rectangle Bounds
         {
             get
             {

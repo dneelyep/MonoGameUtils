@@ -20,7 +20,7 @@ namespace MonoGameUtils.Drawing
         /// <param name="world">The world matrix that the model should be drawn in.</param>
         /// <param name="view">The view matrix that the model should be drawn in.</param>
         /// <param name="projection">The projection matrix that the model should be drawn in.</param>
-       private static void DrawModel(Model model, Matrix world, Matrix view, Matrix projection)
+       public static void DrawModel(Model model, Matrix world, Matrix view, Matrix projection)
         {
             foreach (ModelMesh mesh in model.Meshes)
             {

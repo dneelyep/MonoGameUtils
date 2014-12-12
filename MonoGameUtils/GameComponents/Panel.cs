@@ -7,7 +7,7 @@ namespace MonoGameUtils.GameComponents
     /// <summary>
     /// A solid-color rectangle that can be drawn on-screen.
     /// </summary>
-    internal class Panel : DrawableGameComponent
+    public class Panel : DrawableGameComponent
     {
         #region "Properties"
         public Rectangle Bounds { get; set; }

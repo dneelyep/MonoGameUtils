@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,11 @@ namespace MonoGameUtils.Drawing
         /// <param name="projection">The projection matrix that the model should be drawn in.</param>
        public static void DrawModel(Model model, Matrix world, Matrix view, Matrix projection)
         {
+           Contract.Requires(model != null);
+           Contract.Requires(world != null);
+           Contract.Requires(view != null);
+           Contract.Requires(projection != null);
+
             foreach (ModelMesh mesh in model.Meshes)
             {
                 foreach (BasicEffect effect in mesh.Effects)

@@ -16,7 +16,7 @@ namespace MonoGameUtils.UI
 
         private Texture2D ButtonTexture;
 
-        private SpriteBatch spriteBatch;
+        private readonly SpriteBatch spriteBatch;
 
         public Button(Game game, SpriteFont font, Color textColor, string text,
                       Rectangle bounds, Color backgroundColor, SpriteBatch spriteBatch) : base(game)
@@ -29,12 +29,10 @@ namespace MonoGameUtils.UI
             this.spriteBatch = spriteBatch;
         }
 
-        public override void Initialize()
+        protected override void LoadContent()
         {
             this.ButtonTexture = new Texture2D(Game.GraphicsDevice, 1, 1);
             this.ButtonTexture.SetData<Color>(new Color[] { Color.White });
-
-            base.Initialize();
         }
 
         public override void Draw(GameTime gameTime)

@@ -9,8 +9,12 @@
     <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
-    <releaseNotes>Fix an issue where the Button UI class wasn't performing operations in the correct order, causing it to throw exceptions.</releaseNotes>
+    <releaseNotes>Specify the MonoGame Framework as a dependency of this package rather than rely on a hard-coded DLL reference.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MonoGame Utility</tags>
+
+    <dependencies>
+      <dependency id="MonoGame.Framework.DesktopGL" version="3.5.1.1679"/>
+    </dependencies>
   </metadata>
 </package>

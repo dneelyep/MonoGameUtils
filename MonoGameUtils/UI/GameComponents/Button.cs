@@ -8,7 +8,7 @@ namespace MonoGameUtils.UI.GameComponents
     /// </summary>
     public class Button : DrawableGameComponent
     {
-        public SpriteFont Font { get; set; }
+        public SpriteFont Font { get; set; } 
         public Color TextColor { get; set; }
         public string Text { get; set; }
         public Rectangle Bounds { get; set; }

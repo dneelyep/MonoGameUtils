@@ -69,6 +69,7 @@ namespace MonoGameUtils.UI.GameComponents
         {
             if (Mouse.GetState().LeftButton == ButtonState.Pressed && !_isMousePressed)
             {
+                _isMousePressed = true;
                 if (Click != null)
                 {
                     Click.Invoke(this, new CursorClickEventArgs(Bounds));

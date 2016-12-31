@@ -1,9 +1,20 @@
-﻿before_build:
+﻿#--------------------------------#
+#    environment configuration   #
+#--------------------------------#
+nuget:
+  project_feed: true
+
+#--------------------------#
+#    build configuration   #
+#--------------------------#
+before_build:
   - nuget restore
 
-
+#-------------------------------#
+#    deployment configuration   #
+#-------------------------------#
 deploy:
-  provider: nuget
+  provider: NuGet
   api_key:
     secure: rGnzrQ4lRcTN4BXSukxZBNlIi5UKi9d92cnQwRH29Re/xff8muk63Yb3f+DXSXAH
   skip_symbols: false

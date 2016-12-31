@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{3760AB94-1B6E-4026-82BA-2085D883B25F}"
 	ProjectSection(SolutionItems) = preProject
 		PushGitTagsToGithub.ps1 = PushGitTagsToGithub.ps1
+		TagCommitWithLatestVersionNumber.ps1 = TagCommitWithLatestVersionNumber.ps1
 	EndProjectSection
 EndProject
 Global

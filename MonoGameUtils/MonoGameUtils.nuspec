@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
-    <releaseNotes>Add the ability for the FPSCounter to keep track of the average FPS over a series of samples.</releaseNotes>
+    <releaseNotes>[INTERNAL] Add script to automatically tag commits based on the project's assembly version.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MonoGame Utility</tags>
 

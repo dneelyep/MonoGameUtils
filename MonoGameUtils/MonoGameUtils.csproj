@@ -58,16 +58,16 @@
     <Compile Include="Drawing\Utilities.cs" />
     <Compile Include="Extensions\GameComponentCollection.cs" />
     <Compile Include="Extensions\GraphicsDevice.cs" />
-    <Compile Include="GameComponents\Cursor.cs" />
-    <Compile Include="GameComponents\MoveableEntity.cs" />
-    <Compile Include="GameComponents\ScreenWithInputState.cs" />
+    <Compile Include="UI\GameComponents\Cursor.cs" />
+    <Compile Include="UI\GameComponents\MoveableEntity.cs" />
+    <Compile Include="UI\GameComponents\ScreenWithInputState.cs" />
     <Compile Include="Input\KeyboardRecorder.cs" />
     <Compile Include="Particles\Emitter.cs" />
     <Compile Include="Particles\IEmitter.cs" />
     <Compile Include="Particles\Particle.cs" />
     <Compile Include="Particles\RandomizedEmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\GameComponents\Button.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MonoGameUtils.nuspec">
@@ -84,4 +84,35 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <MonoGameUtilsAssembly>.\bin\Debug\MonoGameUtils.dll</MonoGameUtilsAssembly>
+  </PropertyGroup>
+  <Target Name="PrintAssemblyVersion">
+    <GetAssemblyIdentity AssemblyFiles="$(MonoGameUtilsAssembly)">
+      <Output TaskParameter="Assemblies" ItemName="MonoGameUtilsAssemblyVersion" />
+    </GetAssemblyIdentity>
+    <Message Text="Files: %(MonoGameUtilsAssemblyVersion.Version)" />
+  </Target>
 </Project>
+<!--
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Neel.MonoGame.Utilities</id>
+    <version>1.0.0.2</version>
+    <authors>Daniel Neel</authors>
+    <owners>Daniel Neel</owners>
+    <licenseUrl>https://github.com/dneelyep/MonoGameUtils/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
+    <releaseNotes>Specify the MonoGame Framework as a dependency of this package rather than rely on a hard-coded DLL reference.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>MonoGame Utility</tags>
+
+    <dependencies>
+      <dependency id="MonoGame.Framework.DesktopGL" version="3.5.1.1679"/>
+    </dependencies>
+  </metadata>
+</package>
+-->

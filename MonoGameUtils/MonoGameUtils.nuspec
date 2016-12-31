@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
-    <releaseNotes>Initial alpha release</releaseNotes>
+    <releaseNotes>Fix an issue where the Button UI class wasn't performing operations in the correct order, causing it to throw exceptions.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MonoGame Utility</tags>
   </metadata>

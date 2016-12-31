@@ -28,11 +28,9 @@ namespace MonoGameUtils.UI.GameComponents
         /// </summary>
         private SpriteBatch spriteBatch { get; set; }
 
-        //public delegate void CursorClickDelegate(CursorClickEventArgs args);
-
-        //public event CursorClickDelegate OnClick;
-
         public event EventHandler<CursorClickEventArgs> Click;
+
+        private bool _isMousePressed = false;
 
         public Rectangle Bounds
         {
@@ -69,13 +67,18 @@ namespace MonoGameUtils.UI.GameComponents
 
         public override void Update(GameTime gameTime)
         {
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed && !_isMousePressed)
             {
                 if (Click != null)
                 {
                     Click.Invoke(this, new CursorClickEventArgs(Bounds));
                     
                 }
+            }
+
+            if (Mouse.GetState().LeftButton == ButtonState.Released)
+            {
+                _isMousePressed = false;
             }
 
             base.Update(gameTime);

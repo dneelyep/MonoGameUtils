@@ -70,7 +70,6 @@
     <Compile Include="UI\Button.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="appveyor.yml" />
     <None Include="MonoGameUtils.nuspec">
       <SubType>Designer</SubType>
     </None>

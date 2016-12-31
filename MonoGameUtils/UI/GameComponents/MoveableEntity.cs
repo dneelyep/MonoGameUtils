@@ -1,7 +1,7 @@
-﻿using Microsoft.Xna.Framework;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using Microsoft.Xna.Framework;
 
-namespace MonoGameUtils.GameComponents
+namespace MonoGameUtils.UI.GameComponents
 {
     /// <summary>
     /// Represents an entity with Position, Velocity, and Acceleration.

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace MonoGameUtils.GameComponents
+namespace MonoGameUtils.UI.GameComponents
 {
     /// <summary>
     /// A screen that tracks the Keyboard and Mouse state between

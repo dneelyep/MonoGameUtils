@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace MonoGameUtils.GameComponents
+namespace MonoGameUtils.UI.GameComponents
 {
     /// <summary>
     /// A simple cursor that will follow the user's mouse movements.

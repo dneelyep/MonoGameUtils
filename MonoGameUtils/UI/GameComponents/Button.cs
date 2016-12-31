@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MonoGameUtils.UI
+namespace MonoGameUtils.UI.GameComponents
 {
     /// <summary>
     /// Represents a rectangular button that can be clicked in a game.

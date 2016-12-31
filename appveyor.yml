@@ -22,3 +22,5 @@ deploy:
   api_key:
     secure: rGnzrQ4lRcTN4BXSukxZBNlIi5UKi9d92cnQwRH29Re/xff8muk63Yb3f+DXSXAH
   skip_symbols: false
+  on:
+    appveyor_repo_tag: true		# Only deploy packages when a tag is pushed

@@ -28,6 +28,10 @@ namespace MonoGameUtils.UI.GameComponents
         /// </summary>
         private SpriteBatch spriteBatch { get; set; }
 
+        //public delegate void CursorClickDelegate(CursorClickEventArgs args);
+
+        //public event CursorClickDelegate OnClick;
+
         public event EventHandler<CursorClickEventArgs> Click;
 
         public Rectangle Bounds
@@ -67,18 +71,15 @@ namespace MonoGameUtils.UI.GameComponents
         {
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {
-                if (OnClick != null)
+                if (Click != null)
                 {
-                    OnClick(new CursorClickEventArgs(this.Bounds));
+                    Click.Invoke(this, new CursorClickEventArgs(Bounds));
+                    
                 }
             }
 
             base.Update(gameTime);
         }
-
-        public delegate void CursorClickDelegate(CursorClickEventArgs args);
-
-        public event CursorClickDelegate OnClick;
     }
 
     public class CursorClickEventArgs : EventArgs

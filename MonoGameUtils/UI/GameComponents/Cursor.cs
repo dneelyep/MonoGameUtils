@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -26,6 +27,8 @@ namespace MonoGameUtils.UI.GameComponents
         /// The SpriteBatch to be used to draw this Cursor.
         /// </summary>
         private SpriteBatch spriteBatch { get; set; }
+
+        public event EventHandler<CursorClickEventArgs> Click;
 
         public Rectangle Bounds
         {
@@ -58,6 +61,33 @@ namespace MonoGameUtils.UI.GameComponents
             spriteBatch.Draw(Texture, Bounds, Color);
 
             base.Draw(gameTime);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                if (OnClick != null)
+                {
+                    OnClick(new CursorClickEventArgs(this.Bounds));
+                }
+            }
+
+            base.Update(gameTime);
+        }
+
+        public delegate void CursorClickDelegate(CursorClickEventArgs args);
+
+        public event CursorClickDelegate OnClick;
+    }
+
+    public class CursorClickEventArgs : EventArgs
+    {
+        public Rectangle CursorBounds { get; }
+
+        public CursorClickEventArgs(Rectangle cursorBounds)
+        {
+            CursorBounds = cursorBounds;
         }
     }
 }

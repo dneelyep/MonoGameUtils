@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Diagnostics\FPSCounter.cs" />
     <Compile Include="Drawing\CubicBezierPath.cs" />
     <Compile Include="Drawing\CubicBezier.cs" />
     <Compile Include="Drawing\Drawing.cs" />

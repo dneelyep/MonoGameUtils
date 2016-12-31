@@ -2,6 +2,7 @@
 <package >
   <metadata>
     <id>Neel.MonoGame.Utilities</id>
+    <title>MonoGameUtils</title>
     <version>$version$</version>
     <authors>Daniel Neel</authors>
     <owners>Daniel Neel</owners>
@@ -9,7 +10,7 @@
     <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
-    <releaseNotes>[INTERNAL] Add script to automatically tag commits based on the project's assembly version.</releaseNotes>
+    <releaseNotes>Fix NuGet package title.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MonoGame Utility</tags>
 

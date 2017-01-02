@@ -62,6 +62,7 @@
     <Compile Include="Extensions\Rectangle.cs" />
     <Compile Include="UI\GameComponents\Cursor.cs" />
     <Compile Include="UI\GameComponents\MoveableEntity.cs" />
+    <Compile Include="UI\GameComponents\Panel.cs" />
     <Compile Include="UI\GameComponents\ScreenWithInputState.cs" />
     <Compile Include="Input\KeyboardRecorder.cs" />
     <Compile Include="Particles\Emitter.cs" />

@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/dneelyep/MonoGameUtils</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A collection of utility classes/functionality to make developing games in MonoGame easier.</description>
-    <releaseNotes>Add an extension method to retrieve a Rectangle's location as a Vector2 rather than a Point.</releaseNotes>
+    <releaseNotes>Fix an error where the FPS counter would throw an exception when running.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MonoGame Utility</tags>
 

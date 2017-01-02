@@ -17,7 +17,7 @@ namespace MonoGameUtils.Diagnostics
         public float AverageFPS { get; private set; }
 
         public const int MAXIMUM_SAMPLES = 100;
-        private Queue<float> FPSQueue { get; set; }
+        private Queue<float> FPSQueue { get; set; } = new Queue<float>(MAXIMUM_SAMPLES);
 
         public void Update(float deltaTime)
         {

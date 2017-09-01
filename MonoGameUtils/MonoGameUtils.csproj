@@ -71,6 +71,7 @@
     <Compile Include="Particles\RandomizedEmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\GameComponents\Button.cs" />
+    <Compile Include="UI\GameComponents\UIFPSCounter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MonoGameUtils.nuspec">

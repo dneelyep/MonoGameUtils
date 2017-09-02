@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using MonoGameUtils.Diagnostics;
 
-namespace PCGame.GameComponents
+namespace MonoGameUtils.UI.GameComponents
 {
     public class UIFPSCounter : DrawableGameComponent
     {
@@ -34,7 +34,7 @@ namespace PCGame.GameComponents
         public override void Draw(GameTime gameTime)
         {
             _spriteBatch.DrawString(_font, "Current FPS: " + _fpsCounter.CurrentFPS, _topLeftPoint, _fontColor);
-            _spriteBatch.DrawString(_font, "Avg FPS: " + _fpsCounter.AverageFPS, _avgFPSLocation, _fontColor); 
+            _spriteBatch.DrawString(_font, "Avg FPS: " + _fpsCounter.AverageFPS, _avgFPSLocation, _fontColor);
 
             base.Draw(gameTime);
         }

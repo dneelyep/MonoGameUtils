@@ -73,7 +73,6 @@ namespace MonoGameUtils.UI.GameComponents
                 if (Click != null)
                 {
                     Click.Invoke(this, new CursorClickEventArgs(Bounds));
-                    
                 }
             }
 

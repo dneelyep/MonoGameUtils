@@ -32,16 +32,12 @@ namespace MonoGameUtils.UI.GameComponents
 
         private bool _isMousePressed = false;
 
-        public Rectangle Bounds
-        {
-            get
-            {
-                return new Rectangle(Mouse.GetState().Position.X,
-                                     Mouse.GetState().Position.Y,
-                                     CURSOR_WIDTH,
-                                     CURSOR_HEIGHT);
-            }
-        }
+        private MouseState CurrentMouseState;
+
+        public Rectangle Bounds => new Rectangle(CurrentMouseState.Position.X,
+                                                 CurrentMouseState.Position.Y,
+                                                 CURSOR_WIDTH,
+                                                 CURSOR_HEIGHT);
 
         public Cursor(Game game, SpriteBatch spriteBatch, Color color) : base(game)
         {
@@ -67,7 +63,9 @@ namespace MonoGameUtils.UI.GameComponents
 
         public override void Update(GameTime gameTime)
         {
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed && !_isMousePressed)
+            CurrentMouseState = Mouse.GetState();
+
+            if (CurrentMouseState.LeftButton == ButtonState.Pressed && !_isMousePressed)
             {
                 _isMousePressed = true;
                 if (Click != null)
@@ -76,7 +74,7 @@ namespace MonoGameUtils.UI.GameComponents
                 }
             }
 
-            if (Mouse.GetState().LeftButton == ButtonState.Released)
+            if (CurrentMouseState.LeftButton == ButtonState.Released)
             {
                 _isMousePressed = false;
             }
